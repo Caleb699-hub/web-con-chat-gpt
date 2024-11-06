@@ -1,0 +1,195 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4e2b2b;
+    background-color: #fff6f0;
+}
+
+/* Encabezado */
+header {
+    background-color: #f8bfbf;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Sección general de cada parte */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #d65d5d;
+    margin-bottom: 20px;
+}
+
+/* Sobre Nosotros */
+.about {
+    background-color: #ffe6e1;
+}
+
+.about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Productos */
+.products {
+    background-color: #fce4ec;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 1px solid #f8bfbf;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    color: #d65d5d;
+    margin-top: 10px;
+}
+
+/* Testimonios */
+.testimonials {
+    background-color: #ffe6e1;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial {
+    max-width: 600px;
+    font-style: italic;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f8bfbf;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Contacto */
+.contact {
+    background-color: #fce4ec;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #f8bfbf;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #f8bfbf;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact button:hover {
+    background-color: #d65d5d;
+}
+
+/* Footer */
+footer {
+    background-color: #f8bfbf;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+        margin: 0;
+    }
+}
